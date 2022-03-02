@@ -21,7 +21,7 @@ const config = {
 };
 
 const useConnect = () => {
-  const [wallet, setWallet] = React.useState<nearAPI.WalletConnection>();
+  const [wallet, setWallet] = React.useState<nearAPI.WalletConnection | undefined>();
 
   React.useEffect(() => {
     connect(config).then((near) => {
