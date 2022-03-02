@@ -1,0 +1,69 @@
+{
+    "plugins": ["functional", "import"],
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended",
+      "plugin:import/recommended",
+      "plugin:import/typescript",
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "plugin:functional/external-recommended",
+      "plugin:functional/recommended"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect"
+      },
+      "import/internal-regex": "^@(scenes|components|interfaces|constants|sprites|layouts|styles|utils|store)"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "parser": "@typescript-eslint/parser",
+      "project": "./tsconfig.json",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "semi": ["error", "always"],
+      "no-console": [1, { "allow": ["warn", "error"] }],
+      "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "@typescript-eslint/explicit-function-return-type": [0],
+      "@typescript-eslint/no-explicit-any": [0],
+      "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/prefer-readonly-parameter-types": "off",
+      "no-else-return": ["error", { "allowElseIf": false }],
+      "import/no-unresolved": "off",
+      "import/newline-after-import": ["error", { "count": 1 }],
+      "import/order": [
+        "error",
+        {
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          },
+          "newlines-between": "always",
+          "pathGroups": [
+            {
+              "pattern": "react",
+              "group": "external",
+              "position": "before"
+            }
+          ],
+          "pathGroupsExcludedImportTypes": ["react"],
+          "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object"]
+        }
+      ],
+      "functional/prefer-readonly-type": "off",
+      "functional/no-expression-statement": "off",
+      "functional/functional-parameters": "off",
+      "functional/no-conditional-statement": "off",
+      "functional/no-return-void": "off",
+      "functional/immutable-data": "off",
+      "functional/no-mixed-type": "off"
+    }
+  }
+  
