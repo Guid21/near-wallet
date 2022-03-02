@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/near-wallet/static/css/main.81ba5e5c.css",
+    "main.js": "/near-wallet/static/js/main.b05a9d10.js",
+    "static/js/787.c7faf1e2.chunk.js": "/near-wallet/static/js/787.c7faf1e2.chunk.js",
+    "index.html": "/near-wallet/index.html",
+    "main.81ba5e5c.css.map": "/near-wallet/static/css/main.81ba5e5c.css.map",
+    "main.b05a9d10.js.map": "/near-wallet/static/js/main.b05a9d10.js.map",
+    "787.c7faf1e2.chunk.js.map": "/near-wallet/static/js/787.c7faf1e2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81ba5e5c.css",
+    "static/js/main.b05a9d10.js"
+  ]
+}
